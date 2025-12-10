@@ -1,0 +1,42 @@
+.cache/
+.vscode/
+__pycache__/
+.pytest_cache
+.venv
+
+tools/
+
+# Compiled object files
+*.o
+*.obj
+
+# Compiled static libraries
+*.a
+*.lib
+
+# linker maps
+*.map
+
+# Compiled binaries
+*.elf
+*.bin
+
+# disk images
+*.img
+
+# Log files
+*.log
+
+# temporary files
+*.tmp
+*.temp
+
+# templates
+*.template
+
+# other hidden files
+.projectile
+.editorconfig
+compile_commands.json
+.gdb_history
+peda*

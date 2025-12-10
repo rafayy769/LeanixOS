@@ -1,0 +1,21 @@
+# ROM and VGABIOS
+romimage: file=/usr/share/bochs/BIOS-bochs-legacy
+vgaromimage: file=/usr/share/vgabios/vgabios.bin
+
+# hard disk configuration
+ata0-master: type=disk, path="disk.img", mode=flat, cylinders=0, heads=0, spt=0
+
+# add second hard disk
+ata0-slave: type=disk, path="disk2.img", mode=flat, cylinders=0, heads=0, spt=0
+
+# floppy disk configuration
+floppya: 1_44="floppy.img", status=inserted
+
+# hard disk boot
+boot: disk
+
+# memory in megs
+megs: 256
+
+# serial port
+com1: enabled=1, mode=file, dev=bochs-serial.log
