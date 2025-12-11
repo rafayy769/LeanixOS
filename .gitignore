@@ -6,9 +6,7 @@ __pycache__/
 
 tools/
 
-# Compiled object files
-*.o
-*.obj
+# Compiled object files (kept instead of ignoring, to release them since source files are not included)
 
 # Compiled static libraries
 *.a
